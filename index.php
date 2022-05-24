@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
   $values['limbs']=empty($_COOKIE['limbs_value']) ? '' : $_COOKIE['limbs_value'];
   $values['strenght']=empty($_COOKIE['strenght_value']) ? '' : $_COOKIE['strenght_value'];
   $values['comment']=empty($_COOKIE['comment_value']) ? '' : $_COOKIE['comment_value'];
-  $values['check']=empty($_COOKIE['check_value'] ? '' : $_COOKIE['check_value']);
+  $values['check']=empty($_COOKIE['check_value']) ? '' : $_COOKIE['check_value'];
   include('form.php');
 }
 // Иначе, если запрос был методом POST
